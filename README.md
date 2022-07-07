@@ -1,0 +1,2 @@
+# myProjectsFor50Days
+根据git上著名项目自己手动实现的50天50个小项目
