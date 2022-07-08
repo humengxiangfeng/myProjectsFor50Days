@@ -71,6 +71,7 @@ body {
     background-color: #ffffff;
     transition: all 0.6s ease-out;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .active {
@@ -78,7 +79,7 @@ body {
     color: #3498d8;
 }
 
-.disabled-button {
+button:disabled  {
     cursor: not-allowed;
     background-color: #e8e8e8;
 }

@@ -5,6 +5,7 @@ const activeLine = document.querySelector('.active-line')
 
 let currentNumber = 0
 
+
 prevButton.addEventListener('click', () => {
     if (currentNumber === 0) {
         return
@@ -23,7 +24,26 @@ nextButton.addEventListener('click', () => {
     setActiveNumber()
 })
 
+numberEleArr.forEach((ele, index) => {
+    ele.addEventListener('click', () => {
+        currentNumber = index;
+        setActiveNumber();
+    })
+})
+
 function setActiveNumber() {
+    if (currentNumber === 0) {
+        prevButton.setAttribute('disabled', 'disabled')
+    } else {
+        prevButton.removeAttribute('disabled')
+    }
+
+    if (currentNumber === numberEleArr.length - 1) {
+        nextButton.setAttribute('disabled', 'disabled')
+    } else {
+        nextButton.removeAttribute('disabled')
+    }
+
     numberEleArr.forEach((ele, index) => {
         if (index <= currentNumber) {
             ele.classList.add('active')
