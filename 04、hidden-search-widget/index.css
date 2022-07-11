@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #3498d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 5px;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.text-input {
+    transition: all 0.3s ease-in;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 0
+}
+.btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 20px;
+}
